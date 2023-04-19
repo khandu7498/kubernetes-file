@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: manifest-config
+data:
+  manifest.webmanifest: |
+    {
+      "name": "Hello World",
+      "short_name": "Hello",
+      "start_url": "/",
+      "display": "standalone",
+      "icons": [
+        {
+          "src": "/icon.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    }
